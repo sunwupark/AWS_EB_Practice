@@ -8,6 +8,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RootController {
 
-    @GetMapping("/health")
-    public String healthCheckAPI(){return "I'm healthy!";}
+    //여기에 health check 추가!
 }

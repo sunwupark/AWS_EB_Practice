@@ -51,10 +51,10 @@ jobs:
       - name: Beanstalk Deploy
         uses: einaregilsson/beanstalk-deploy@v20
         with:
-          aws_access_key: ${{ 본인의 access 키}}
-          aws_secret_key: ${{ 본인의 secret 키}}
-          application_name: 본인의 앱
-          environment_name: 본인의 환경
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY}}
+          aws_secret_key: ${{ secrets.AWS_SECRET_KEY}}
+          application_name: asc-test-eb
+          environment_name: asc-test-eb-env
           version_label: github-action-${{ steps.current-time.outputs.formattedTime }}
           region: ap-northeast-2
           deployment_package: deploy/deploy.zip

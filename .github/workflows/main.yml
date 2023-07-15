@@ -3,7 +3,9 @@ name: acc Dev CI/CD
 
 on:
   push:
-    branches: [ main ] # develop에 push될 때 CD가 일어나도록 핸들링
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:

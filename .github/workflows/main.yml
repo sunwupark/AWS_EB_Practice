@@ -1,5 +1,10 @@
 name: acc Dev CI/CD
 
+
+on:
+  push:
+    branches: [ main ] # develop에 push될 때 CD가 일어나도록 핸들링
+
 jobs:
   build:
     runs-on: ubuntu-latest # (3).OS환경

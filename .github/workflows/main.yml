@@ -53,8 +53,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY}}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY}}
-          application_name: github-action-test
-          environment_name: Github-action-test-env
+          application_name: github-action-test2
+          environment_name: Github-action-test2-env
           version_label: github-action-${{ steps.current-time.outputs.formattedTime }}
           region: ap-northeast-2
           deployment_package: deploy/deploy.zip
